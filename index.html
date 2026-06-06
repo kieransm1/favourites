@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>Testing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="title-header">
+    <h1>My Favorites 💖</h1>
+<div class="barrier">
+
+</div>
+
+<div class="my-box">
+    <h1>Frequently Asked Questions</h1>
+    <p>Q: who the fuck are the gypsies</p>
+    <p>A: the gypsies are the most elite RAFAC NCOs</p>
+</div>
+
+
+<br>
+
+
+<div class="barrier">
+
+</div>
+
+
+<div class="galleryheader">
+    <h1>Image Gallery</h1>
+</div>
+
+
+<div class="gallery">
+
+    <div class="img1">
+    <a href="https://ibb.co/W4q4mcp2"><img src="https://i.ibb.co/8LTL1j47/IMG-5036.jpg" alt="IMG-5036"></a>
+    <p>Abigail 💕</p>    
+    </div>
+
+    <div class="img2">
+    <a href="https://ibb.co/MkdXQDsV"><img src="https://i.ibb.co/qY6ZVMds/IMG-3093.jpg" alt="IMG-3093" ></a>    
+    <p>THE Gypsies + Kenneth</p>
+    </div>
+
+    <div class="img3">
+    <a href="https://ibb.co/dwLhsQr7"><img src="https://i.ibb.co/v6QtCJHD/IMG-4890.jpg" alt="IMG-4890"></a>
+    <p>SCO v FRA National Bearer</p>
+    </div>
+</div>
+<br>
+<div class="barrier">
+
+</div>
+
+<div class="audio-player">
+    <div class=audio-info>
+        <div class=album-cover><img src="MamaCass_DreamALittleDreamOfMe.webp" alt="Mama Cass Album Cover"></div>
+        <h3 class="audio-title">Dream A Little Dream Of Me</h3>
+        <p class="audio-sub">Mama Cass</p>
+    </div>
+
+    <button class="play-btn" id="playBtn">▶</button>
+
+    <div class="progress-container">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <span class="time" id="time">0:00</span>
+
+    <audio id="audio" src="Mama Cass - Dream A Little Dream Of Me (with lyrics).mp3"></audio>
+</div>
+
+<script>
+    const audio = document.getElementById("audio");
+const playBtn = document.getElementById("playBtn");
+const progress = document.getElementById("progress");
+const time = document.getElementById("time");
+
+playBtn.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        playBtn.textContent = "⏸";
+    } else {
+        audio.pause();
+        playBtn.textContent = "▶";
+    }
+});
+
+audio.addEventListener("timeupdate", () => {
+    const percent = (audio.currentTime / audio.duration) * 100;
+    progress.style.width = percent + "%";
+
+    const mins = Math.floor(audio.currentTime / 60);
+    const secs = Math.floor(audio.currentTime % 60).toString().padStart(2, "0");
+    time.textContent = `${mins}:${secs}`;
+});
+
+</script>
+</body>
+
+</html>
