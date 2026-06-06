@@ -1,0 +1,161 @@
+body {
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #8a005e;
+        background-image: url("https://transparenttextures.com/patterns/axiom-pattern.png");
+    }
+
+    p {
+        color: #ffffff;
+        text-align:center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    .my-box {
+        background-color:rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        text-align: center
+    }
+
+    .title-header {
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+.barrier {
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0.2);
+        font-family: 'Arial', sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+}
+
+.gallery {
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery img:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galleryheader{
+    font-size:30px;
+}
+
+.audio-player {
+    width: 420px;
+    background: #8a005e;
+    padding: 20px;
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.audio-info {
+    flex: 1;
+}
+
+.audio-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.audio-sub {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.play-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #8a005e;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.play-btn:hover {
+    background: #520339;
+    transform: scale(1.1);
+}
+
+.progress-container {
+    width: 120px;
+    height: 6px;
+    background: #ffffff33;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.time {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.album-cover img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
